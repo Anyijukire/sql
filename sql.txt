@@ -1,0 +1,26 @@
+1 Write a guerry to obtain all records from the table
+SELECT * FROM Students;
+2 A querry to obtain the names and marks of all students
+SELECT name, marks FROM Students;
+3 to return all uenique towns fron the table
+SELECT DISTINCT town FROM Students;
+4 to obain names of students from Ruiru
+SELECT name FROM Students WHERE town = "Ruiru";
+5 students who scored over 85 marks
+SELECT * FROM Students WHERE marks>85;
+6.Write a query to obtain the names and marks of the students in ascending
+order of marks
+SELECT name, marks FROM Students ORDER BY marks;
+7.Write a query to return all the students who scored over 80 marks from
+Lodwar
+SELECT name FROM Students WHERE town = "Lodwar" AND marks>80;
+8.Write a query to obtain the names of the students who scored above 70 marks
+outside Nairobi.
+SELECT name FROM Students WHERE town != "Nairobi" AND marks> 70;
+9.Write a query to obtain all the students records in alphabetical order of their
+names
+SELECT * FROM Students ORDER BY name;
+10.Write a query to obtain the names of the students who either reside in Nairobi
+i or scored above 80 marks.
+SELECT name FROM Students WHERE town = "Nairobi" OR marks > 80;
+  
